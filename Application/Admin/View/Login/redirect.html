@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <title>{$title}</title><meta charset="UTF-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="__PUBLIC__/matrix_admin/img/logo_letu_64.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-login-redirect.css" />
+        <link href="__PUBLIC__/matrix_admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link href='__PUBLIC__/matrix_admin/css/fonts_googleapis.css' rel='stylesheet' type='text/css'>
+        <script>
+            setTimeout(function(){
+             window.location.href="{:U('Admin/login/index')}";
+            },2000); 
+        </script>
+</head>
+    <body>
+        <!--新增导航-->
+        <div class="head">
+            <div class="head-box">
+                <div class="pull-left lelogo">
+                    <h1><a href="#" title="乐兔APP推广系统"></a></h1>
+                </div>
+            </div>
+        </div>
+        <!--新增导航 END-->
+    <div class="login_bg">
+        <div style="width:100%;height:150px;"> </div>
+        <div id="loginbox">      
+
+                 <div class="control-group normal_text"> 请先登录！<br/><span>3秒后自动跳转到登录页面</span></div>
+    
+        </div>
+    </div>
+   
+    <!--新增系统底部信息部分 -->
+    <div class="login_footer">
+        <ul class="login_footer_ul">
+            <li class="login_footer_li"><a href="#">关于我们</a></li>
+            <li class="login_footer_li"><a href="#">运营规范</a></li>
+            <li class="login_footer_li"><a href="#">投诉建议</a></li>
+            <li class="login_footer_li"><a href="#">联系我们</a></li>
+            <li><p class="copyright">Copyright © 2016-2019 Letu Tecnology. All Rights Reserved.</p></li>
+        </ul>
+    </div>  
+    <!--新增系统底部信息部分 END--> 
+    </body>
+
+</html>

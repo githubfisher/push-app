@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Matrix Admin</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/uniform.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/select2.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-style.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-media.css" />
+<link href="__PUBLIC__/matrix_admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body style="background-color:#f9f9f9;">
+  <div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="current">Tables</a> </div>
+    <h1>订单中心</h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+            <h5>订单列表</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <table class="table table-bordered data-table" >
+              <thead>
+                <tr>
+                  <th>客户名</th>
+                  <th>产品</th>
+                  <th>订单时间</th>
+                  <th>收货地址</th>
+                  <th>备注</th>
+                  <th>付款状态</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="gradeX">
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 4.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeC">
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 5.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 5.5</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td>请发顺丰</td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 6</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Trident</td>
+                  <td>Internet Explorer 7</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Trident</td>
+                  <td>AOL browser (AOL desktop)</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td>快点就行</td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Firefox 1.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Firefox 1.5</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Firefox 2.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Firefox 3.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Camino 1.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Camino 1.5</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Netscape 7.2</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Netscape Browser 8</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Netscape Navigator 9</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Mozilla 1.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Mozilla 1.1</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Mozilla 1.2</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Mozilla 1.3</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Mozilla 1.4</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Mozilla 1.5</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Mozilla 1.6</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Mozilla 1.7</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Mozilla 1.8</td>
+                 <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Seamonkey 1.1</td>
+                 <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Gecko</td>
+                  <td>Epiphany 2.20</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Webkit</td>
+                  <td>Safari 1.2</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Webkit</td>
+                  <td>Safari 1.3</td>
+                 <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Webkit</td>
+                  <td>Safari 2.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Webkit</td>
+                  <td>Safari 3.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Webkit</td>
+                  <td>OmniWeb 5.5</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Webkit</td>
+                  <td>iPod Touch / iPhone</td>
+                 <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Webkit</td>
+                  <td>S60</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Opera 7.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Opera 7.5</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Opera 8.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Opera 8.5</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Opera 9.0</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Opera 9.2</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Opera 9.5</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Opera for Wii</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Nokia N800</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Presto</td>
+                  <td>Nintendo DS browser</td>
+                 <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeC">
+                  <td>KHTML</td>
+                  <td>Konqureror 3.1</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>KHTML</td>
+                  <td>Konqureror 3.3</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeA">
+                  <td>KHTML</td>
+                  <td>Konqureror 3.5</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeX">
+                  <td>Tasman</td>
+                  <td>Internet Explorer 4.5</td>
+                 <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeC">
+                  <td>Tasman</td>
+                  <td>Internet Explorer 5.1</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td></td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+                <tr class="gradeC">
+                  <td>Tasman</td>
+                  <td>Internet Explorer 5.2</td>
+                  <td>2016-03-15 20:10:32</td>
+                  <td class="center">北京市朝阳区酒仙桥10号四川大厦1032室</td>
+                  <td>只要不发圆通，其他都行</td>
+                  <td>已付款</td>
+                  <td><a>查看</a> / <a>发货</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="__PUBLIC__/matrix_admin/js/jquery.min.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/jquery.ui.custom.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/bootstrap.min.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/jquery.uniform.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/select2.min.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/jquery.dataTables.min.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/matrix.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/matrix.tables.js"></script>
+</body>
+</html>

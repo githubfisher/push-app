@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <title>{$title}</title><meta charset="UTF-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="__PUBLIC__/matrix_admin/img/logo_letu_64.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-login.css" />
+        <link href="__PUBLIC__/matrix_admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        input[type="checkbox"], input[type="radio"] {
+            padding: 0;
+            outline: 0;
+            position: absolute;
+            left: -999em;
+        }
+    </style>
+    <script>
+        //  更改‘记住账号“前的选框的状态
+        function selectt(){
+            $("#account").prop("checked") ? $("#account").parent().addClass("selected") : $("#account").parent().removeClass("selected");
+        }
+        //定义跳转地址
+        var url = "{:U('Admin/index/index')}";
+        // 响应回车
+        document.onkeydown = function (e) {
+            var recoverform = document.getElementById("recoverform");
+            var theEvent = window.event || e;
+            var code = theEvent.keyCode || theEvent.which;
+            if (code == 13) {
+                if(recoverform.style.display == "block"){ //如果显示的登录框，提交登录；如果是找回密码框，提交邮箱。
+                    $("#to-sply").click();
+                }else{
+                    $("#login-to").click();
+                }               
+            }
+        } 
+    </script>
+</head>
+    <body>
+        <!--新增导航-->
+        <div class="head">
+            <div class="head-box">
+                <div class="pull-left lelogo">
+                    <h1><a href="#" title="乐兔APP推广系统"></a></h1>
+                </div>
+                <div class="pull-right register">
+                    第一次使用乐兔推广？  
+                    <a href="#">立即注册</a>
+                    <i class="account_line">|</i>
+                    <a href="#" target="_blank">使用帮助</a>
+                </div>
+            </div>
+        </div>
+        <!--新增导航 END-->
+    <div class="login_bg">
+        <div style="width:100%;height:40px;"> </div>
+        <div id="loginok">
+                <div class="avatar">
+                    <div class="inner"></div>
+                    <img src="__PUBLIC__/matrix_admin/img/demo/av1_1.jpg" />
+                </div>
+                <div class="text">
+                    <h4>Hello,<span class="user_name"></span></h4>
+                </div>
+        </div>  
+        <div id="loginbox">      
+            <form id="loginform" class="form-vertical" action="javascript:void(0);">
+                <!-- <div class="control-group normal_text"> <h3><img src="img/logo.png" alt="Logo" /></h3></div> -->
+				 <div class="control-group normal_text"> 用户登录</div>
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="main_input_box">
+                            <!-- <span class="add-on bg_lg"><i class="icon-user"></i></span> -->
+                            <span class="add-on bg_ly"><i class="login-icon-user"></i></span>
+                            <input class="login-user" type="text" id="username" placeholder="用户名"/> <!-- placeholder="用户名" -->
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="main_input_box">
+                           <!-- <span class="add-on bg_ly"><i class="icon-lock"></i></span> -->
+                           <span class="add-on bg_ly"><i class="login-icon-lock"></i></span>
+                           <input class="login-lock" type="password" id="password" placeholder="密码"/>   <!-- placeholder="密码"    #00b7ee -->
+                        </div>
+                    </div>
+                </div>
+                <!--  新增-->
+                 <div class="control-group">
+                    <div class="controls">
+                        <span class="pull-left"><label for="account" onclick="selectt();" id="lab_account"><i class="login-icon-account"></i><input id="account" name="account" type="checkbox" value="1" />记住账号</label> </span>
+                        <span class="pull-right"><a href="javascript:void(0);" id="to-recover">忘记密码？</a></span>
+                    </div>
+                </div>
+                <!--  新增END-->
+                <div class="form-actions">
+                    <!-- <span class="pull-left"><a href="#" class="flip-link btn btn-info" id="to-recover">忘记密码？</a></span> -->
+                    <span class="pull-left"><i class="login-message"></i></span>
+                    <span class="pull-right"><a type="submit" href="javascript:void(0);" class="btn btn-success" id="login-to"/> 登录</a></span>
+                </div>
+            </form>
+            <form id="recoverform" action="javascript:void(0);" class="form-vertical">
+				<p class="normal_text2">输入电子邮箱地址，以便找回密码。</p>
+				
+                    <div class="controls">
+                        <div class="main_input_box">
+                            <span class="add-on bg_lo"><i class="icon-envelope"></i></span><input type="text" placeholder="电子邮箱" id="splyemail"/>
+                        </div>
+                    </div>
+               
+                <div class="form-actions">
+                    <span class="pull-left"><a href="javascript:void(0);" class="flip-link btn btn-success" id="to-login">&laquo; 返回登录</a></span>
+                    <span class="pull-right"><a class="btn btn-info" href="javascript:void(0);" id="to-sply"/>提交</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--新增系统公告部分 -->  
+    <div class="login_bbs">
+        <dl>
+            <dt><i></i>系统公告</dt>
+            <dd><i>●</i><a href="#">推送系统最新更新，支持批量分组推送给特定群体客户...</a><span class="label_new"></span></dd>
+            <dd><i>●</i><a href="#">最新修正：支付成功后返回错误信息的BUG...</a><span class="label_new"></span></dd>
+            <dd><a href="#">查看更多</a><i class="icon_arrow"></i></dd>
+        </dl>
+    </div> 
+    <!--新增系统公告部分 END -->  
+    <!--新增系统底部信息部分 -->
+    <div class="login_footer">
+        <ul class="login_footer_ul">
+            <li class="login_footer_li"><a href="#">关于我们</a></li>
+            <li class="login_footer_li"><a href="#">运营规范</a></li>
+            <li class="login_footer_li"><a href="#">投诉建议</a></li>
+            <li class="login_footer_li"><a href="#">联系我们</a></li>
+            <li><p class="copyright">Copyright © 2016-2019 Letu Tecnology. All Rights Reserved.</p></li>
+        </ul>
+    </div>  
+    <!--新增系统底部信息部分 END--> 
+        <script src="__PUBLIC__/matrix_admin/js/jquery.min.js"></script>
+        <script src="__PUBLIC__/matrix_admin/js/jquery-ui.custom.min.js"></script>  
+        <script src="__PUBLIC__/matrix_admin/js/matrix.login.js"></script> 
+
+        <!--登录框shake特效文件 -->
+       
+        <!--登录框shake特效文件 END-->
+    </body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Matrix Admin</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-style.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-media.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/preview_pc.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/preview_mobile.css" />
+<link rel="stylesheet" href="__PUBLIC__/matrix_admin/font-awesome/css/font-awesome.css" />
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<script>
+  var url1 = "{:U('Admin/trade/index')}";
+  var url2 = "{:U('Admin/index/index')}";
+  function huan(){
+    $('#lightbox').hide();
+    $('#lightbox_m').show();
+  }
+  function qie(){
+    $('#lightbox_m').hide();
+    $('#lightbox').show();
+  }
+</script>
+<body>
+
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#">Sample pages</a> <a href="#" class="current">Gallery</a> </div>
+    <h1>营销推广</h1>
+  </div>
+  <div class="container-fluid"><hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-picture"></i> </span>
+            <h5>营销推广活动列表</h5>
+          </div>
+          <div class="widget-content">
+            <ul class="thumbnails">
+              <li class="span2"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" alt="" > </a>
+                <div class="actions"> <a title="" class="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" target="_parent"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span2"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox4.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" target="_parent"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span2"> <a > <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox5.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" target="_parent"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span2"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox1.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" target="_parent"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span2"> <a > <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox2.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" target="_parent"><i class="icon-search"></i></a> </div>
+              </li>
+             
+              
+              
+              <li class="span2"> <a href="{:U('Admin/marketing/new_info')}" target="rightFrame"> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox6.jpg" alt="" title="添加新推广"> </a></li>
+            </ul>
+           <!-- <ul class="thumbnails">
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox1.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox2.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox4.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox5.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox1.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox2.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox4.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox5.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox1.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox2.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox4.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a class="thumbnail lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox5.jpg"> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox5.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox1.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox2.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox4.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox5.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox1.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox2.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              <li class="span1"> <a> <img src="__PUBLIC__/matrix_admin/img/gallery/imgbox4.jpg" alt="" > </a>
+                <div class="actions"> <a title="" href="#"><i class="icon-pencil"></i></a> <a class="lightbox_trigger" href="__PUBLIC__/matrix_admin/img/gallery/imgbox3.jpg"><i class="icon-search"></i></a> </div>
+              </li>
+              
+            </ul>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="__PUBLIC__/matrix_admin/js/jquery.min.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/jquery.ui.custom.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/bootstrap.min.js"></script> 
+<script src="__PUBLIC__/matrix_admin/js/matrix.js"></script>
+</body>
+</html>

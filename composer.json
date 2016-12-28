@@ -1,0 +1,17 @@
+{
+    "name": "githubfisher/push-app",
+    "description": "app show web site,power by thinkphp",
+    "type": "library",
+    "keywords": ["show","website","app"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fisher",
+            "email": "gooodfisher@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "minimum-stability": "dev"
+}

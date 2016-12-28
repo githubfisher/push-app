@@ -1,0 +1,107 @@
+#back{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(overlay.png) repeat #333;
+	text-align: center;
+	z-index: 90;
+	opacity: 0.9;
+	outline: none !important;
+}
+#pre_top{
+
+	width: 100%;
+	height: 5%;
+	text-align: center;
+	z-index: 21;
+}
+#pre_center{
+	width: 100%;
+	height: 60%;
+
+	text-align: center;
+	z-index: 21;
+}
+.pre_center_div{
+	float:left;
+}
+#center_one{
+	width:12.5%;
+	height:100%;
+}
+#center_two{
+
+	width:75%;
+	height:100%;
+	overflow: auto;
+}
+#center_there{
+	width:12.5%;
+	height:100%;
+}
+#pre_footer{
+	width: 100%;
+	height: 35%;
+	text-align: center;
+	z-index: 21;
+}
+* html #center_two
+{
+height: 100%;
+width: 100%;
+}
+#i_top{
+	height:8.852459%; /*27px*/
+	width:100%;
+	background-color: red;
+	background:url('../img/top.png') no-repeat;
+	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+   -moz-background-size:100% 100%;
+   background-size:100% 100%;
+}
+#i_middle{
+	height:74.754098%; /*305px*/
+}
+#i_foot{
+	height:16.393443%;/*50px*/
+	width:100%;
+	background-color: red;
+	background:url('../img/down.png') no-repeat;
+	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+   -moz-background-size:100% 100%;
+   background-size:100% 100%;
+}
+#a_left{
+	height:100%; /*305px*/
+	float:left;
+	width:15.277778%; /*99px*/
+	background:url('../img/right.png') no-repeat;
+	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+}
+#a_middle{
+	height:100%; /*305px*/
+	float:left;
+	width:69.290123%; /*449px*/
+	overflow: visible;
+}
+#a_middle iframe{
+	/*transform:scale(1,0.6);  
+	-webkit-transform: scale(0.6);
+	-webkit-transform-origin: 100% 100%;*/
+}
+#a_right{
+	height:100%;
+	float:left;
+	width:15.277778%; /*99px*/
+	background:url('../img/left.png') no-repeat;
+	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+}
+.opacity_pc{
+	/*opacity:0.9;*/
+}

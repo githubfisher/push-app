@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <title>{$title}</title><meta charset="UTF-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="__PUBLIC__/matrix_admin/img/logo_letu_64.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-logout.css" />
+        <link href="__PUBLIC__/matrix_admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+        <script>
+            function relogin(){
+                window.location.href = "{:U('Admin/login/index')}";
+            } 
+        </script>
+</head>
+    <body>
+        <!--新增导航-->
+        <div class="head">
+            <div class="head-box">
+                <div class="pull-left lelogo">
+                    <h1><a href="#" title="乐兔APP推广系统"></a></h1>
+                </div>
+            </div>
+        </div>
+        <!--新增导航 END-->
+    <div class="login_bg">
+        <div style="width:100%;height:150px;"> </div>
+        <div id="loginbox">      
+
+                 <div class="control-group normal_text"><i class="user_name"> Admin</i>，您已成功退出！<br/> <br/><span><a type="submit" href="javascript:void(0);" class="btn btn-success" id="login-to" onclick="relogin()"/> 重新登录</a></span></div>
+    
+        </div>
+    </div>
+   
+    <!--新增系统底部信息部分 -->
+    <div class="login_footer">
+        <ul class="login_footer_ul">
+            <li class="login_footer_li"><a href="#">关于我们</a></li>
+            <li class="login_footer_li"><a href="#">运营规范</a></li>
+            <li class="login_footer_li"><a href="#">投诉建议</a></li>
+            <li class="login_footer_li"><a href="#">联系我们</a></li>
+            <li><p class="copyright">Copyright © 2016-2019 Letu Tecnology. All Rights Reserved.</p></li>
+        </ul>
+    </div>  
+    <!--新增系统底部信息部分 END--> 
+    </body>
+
+</html>

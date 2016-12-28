@@ -1,0 +1,155 @@
+<html>
+<head>
+ 	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/fullcalendar.css" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-style.css" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-media.css" />
+	<link href="__PUBLIC__/matrix_admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/jquery.gritter.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		#sidebar > ul {
+		    border:0;
+		}
+		#sidebar > ul > li {
+		    border:0;
+		    padding: 10px 0 10px 15px;
+		}
+		#sidebar > ul > li > a {
+		    padding: 5px;
+		    display: block;
+		    color: #30A5FF;
+		    font-size:14px;
+		}
+		#sidebar > ul li span {
+		    cursor: pointer;
+		    margin: 0px 2px 0 5px;
+		    font-weight: bold;
+		    font-size: 14px;
+		    color: #30A5FF;
+		}
+		#sidebar > ul > li:hover{
+		    background-color: #E9ecf2;
+		    color: #30a5ff;
+		}	
+		#sidebar > ul > li >a:hover{
+		    background-color: #E9ecf2;
+		    color: #30a5ff;
+		}	
+		#user-nav > ul > li > a > i, #sidebar li a i {
+		    opacity: 1;
+		}
+		#sidebar > ul > li.active {
+		    background-color: #30A5FF;
+		    color:#fff;
+		    border:0;
+		}
+		#sidebar > ul > li.active:hover{
+		    background-color: #30A5FF;
+		    color: #fff;
+		}	
+		#sidebar > ul > li.active >a:hover{
+		    background-color: #30A5FF;
+		    color: #fff;
+		}
+		#sidebar > ul > li.active a span{
+		    color: #fff;
+		    text-decoration: none;
+		}
+	</style>
+</head>
+<body style="background-color:#fff">
+	
+	<!--sidebar-menu-->
+	<div id="sidebar"> <!--<a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>-->
+	  <ul>
+	    <li class="active"><a href="board.html" target="rightFrame" onclick="toggle_active(this);"><i class="icon icon-home"></i> <span>系统首页</span></a> </li>
+	    <li> <a href="{:U('Admin/marketing/index')}" target="rightFrame" onclick="toggle_active(this);"><i class="icon icon-inbox"></i> <span>营销推广</span></a> </li>
+	    <li><a href="{:U('Admin/trade/index')}" target="rightFrame" onclick="toggle_active(this);"><i class="icon icon-th"></i> <span>订单中心</span></a></li>
+	    <li><a href="{:U('Admin/download/data')}" target="rightFrame" onclick="toggle_active(this);"><i class="icon icon-fullscreen"></i> <span>下载统计</span></a></li>
+	    <li> <a href="{:U('Admin/report/index')}" target="rightFrame" onclick="toggle_active(this);"><i class="icon icon-signal"></i> <span>数据 &amp; 报表</span></a> </li>
+	    <li><a href="{:U('Admin/account/index')}" target="rightFrame" onclick="toggle_active(this);"><i class="icon icon-tint"></i> <span>账户管理</span></a></li>
+	   <!-- <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
+	      <ul>
+	        <li><a href="form-common.html" target="rightFrame">Basic Form</a></li>
+	        <li><a href="form-validation.html" target="rightFrame">Form with Validation</a></li>
+	        <li><a href="form-wizard.html" target="rightFrame">Form with Wizard</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="interface.html" target="rightFrame"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
+	    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">5</span></a>
+	      <ul>
+	        <li><a href="index2.html" target="rightFrame">Dashboard2</a></li>
+	        <li><a href="gallery.html" target="rightFrame">Gallery</a></li>
+	        <li><a href="calendar.html" target="rightFrame">Calendar</a></li>
+	        <li><a href="invoice.html" target="rightFrame">Invoice</a></li>
+	        <li><a href="chat.html" target="rightFrame">Chat option</a></li>
+	      </ul>
+	    </li>
+	    <li class="submenu"> <a href="#"><i class="icon icon-info-sign"></i> <span>Error</span> <span class="label label-important">4</span></a>
+	      <ul>
+	        <li><a href="error403.html" target="rightFrame">Error 403</a></li>
+	        <li><a href="error404.html" target="rightFrame">Error 404</a></li>
+	        <li><a href="error405.html" target="rightFrame">Error 405</a></li>
+	        <li><a href="error500.html" target="rightFrame">Error 500</a></li>
+	      </ul>
+	    </li> 
+	    <li class="content"> <span>Monthly Bandwidth Transfer</span>
+	      <div class="progress progress-mini progress-danger active progress-striped">
+	        <div style="width: 77%;" class="bar"></div>
+	      </div>
+	      <span class="percent">77%</span>
+	      <div class="stat">21419.94 / 14000 MB</div>
+	    </li>
+	    <li class="content"> <span>Disk Space Usage</span>
+	      <div class="progress progress-mini active progress-striped">
+	        <div style="width: 87%;" class="bar"></div>
+	      </div>
+	      <span class="percent">87%</span>
+	      <div class="stat">604.44 / 4000 MB</div>
+	    </li>-->
+	  </ul>
+	</div>
+	<!--Footer-part-->
+
+	<div class="row-fluid" style="position: absolute;bottom: 0px;">
+	  <div id="footer" class="span12"> 2016 - 2019 &copy; 乐兔科技<a href="http://www.letu.com/"> Letutecnology.com</a> </div>
+	</div>
+
+	<!--end-Footer-part-->
+	<!--end-main-container-part-->
+	<script src="__PUBLIC__/matrix_admin/js/matrix.js"></script> 
+	<script src="__PUBLIC__/matrix_admin/js/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	  // This function is called from the pop-up menus to transfer to
+	  // a different page. Ignore if the value returned is a null string:
+	  function goPage (newURL) {
+
+	      // if url is empty, skip the menu dividers and reset the menu selection to default
+	      if (newURL != "") {
+	      
+	          // if url is "-", it is this page -- reset the menu:
+	          if (newURL == "-" ) {
+	              resetMenu();            
+	          } 
+	          // else, send page to designated URL            
+	          else {  
+	            document.location.href = newURL;
+	          }
+	      }
+	  }
+
+	// resets the menu selection upon entry to this page:
+	function resetMenu() {
+	   document.gomenu.selector.selectedIndex = 2;
+	}
+	function toggle_active(aid){
+		// alert(aid); //debug
+		$(".active").removeClass("active");
+		$(aid).parent().addClass("active");
+	}
+	</script>
+</body>
+</html>

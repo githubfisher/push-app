@@ -1,0 +1,85 @@
+<html>
+<head>
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/fullcalendar.css" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-style.css" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/matrix-media.css" />
+	<link href="__PUBLIC__/matrix_admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="__PUBLIC__/matrix_admin/css/jquery.gritter.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		#header{
+			margin-top:0;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+	  <h1><a href="{:U('Admin/index/index')}" title="乐兔推广系统"></a></h1>
+	</div>
+	<!--top-Header-menu-->
+	<div id="user-nav" class="navbar navbar-inverse">
+	  <ul class="nav">
+	    <li  class="dropdown" id="profile-messages" ><a title="" href="javascript:void(0);" id="usercenter" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle" onclick="toggle_open('usercenter');"><i class="icon icon-user"></i>  <span class="text">会员中心</span><b class="caret"></b></a>
+	      <ul class="dropdown-menu">
+	        <li><a href="{:U('Admin/user/index')}" target="rightFrame"><i class="icon-user"></i>个人信息</a></li>
+	        <li class="divider"></li>
+	        <li><a href="{:U('Admin/user/index')}" target="rightFrame"><i class="icon-check"></i>工作任务</a></li>
+	        <li class="divider"></li>
+	        <li><a href="{:U('Admin/login/logout')}" target="rightFrame"><i class="icon-key"></i>退出</a></li>
+	      </ul>
+	    </li>
+	    <li class="dropdown" id="menu-messages"><a href="javascript:void(0);" id="message" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle" onclick="open_message();"><i class="icon icon-envelope"></i> <span class="text">新消息</span> <span class="label label-important">5</span> <b class="caret"></b></a>
+	      <ul class="dropdown-menu">
+	        <li><a class="sAdd" title="" href="#" target="rightFrame"><i class="icon-plus"></i>新消息</a></li>
+	        <li class="divider"></li>
+	        <li><a class="sInbox" title="" href="#" target="rightFrame"><i class="icon-envelope"></i>收件箱</a></li>
+	        <li class="divider"></li>
+	        <li><a class="sOutbox" title="" href="#" target="rightFrame"><i class="icon-arrow-up"></i>发件箱</a></li>
+	        <li class="divider"></li>
+	        <li><a class="sTrash" title="" href="#" target="rightFrame"><i class="icon-trash"></i>垃圾箱</a></li>
+	      </ul>
+	    </li>
+	    <li class=""><a title="" href="#" target="rightFrame"><i class="icon icon-cog"></i> <span class="text">设置</span></a></li>
+	    <li class=""><a title="" href="{:U('Admin/login/logout')}" target="_parent"><i class="icon icon-share-alt"></i> <span class="text">退出</span></a></li>
+	  </ul>
+	</div>
+	<!--close-top-Header-menu-->
+	<!--start-top-serch-->
+		<!--<div id="search">
+		  <input type="text" placeholder="本站搜索..."/>
+		  <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+		</div>-->
+	<!--close-top-serch-->
+	<script>
+		function toggle_open(bid){
+			alert(bid);
+			if(bid == "usercenter"){
+				if($("#profile-messages").is(".open")){
+					$("#profile-messages").removeClass("open");
+				}else{
+					$("#profile-messages").addClass("open");
+				}
+				
+			}else{
+				if($("#menu-messages").is(".open")){
+					$("#menu-messages").removeClass("open");
+				}else{
+					$("#menu-messages").addClass("open");
+				}
+			}
+			alert("done");
+		}
+		function open_message(){
+			alert('dd');
+			$("#message").addClass("open");
+			if($("#menu-messages").is(".open")){
+				$("#menu-messages").removeClass("open");
+			}else{
+				$("#menu-messages").addClass("open");
+			}
+		}
+	</script>
+</body>
+</html>
